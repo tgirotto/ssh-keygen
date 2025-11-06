@@ -11,7 +11,7 @@ The module expects a JSON array with the SSH keygen configuration as the first e
 [{
   "t": "rsa",
   "b": 4096,
-  "C": "tommaso.girotto91@gmail.com"
+  "C": "example@gmai.com"
 }]
 ```
 
@@ -19,7 +19,7 @@ The module expects a JSON array with the SSH keygen configuration as the first e
 ```json
 [{
   "t": "ed25519",
-  "C": "tommaso.girotto91@gmail.com"
+  "C": "example@gmai.com"
 }]
 ```
 
@@ -49,7 +49,7 @@ Returns a JSON array with properly escaped keys:
 ```json
 [
   "-----BEGIN OPENSSH PRIVATE KEY-----\n...\n-----END OPENSSH PRIVATE KEY-----\n",
-  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... tommaso.girotto91@gmail.com"
+  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... example@gmai.com"
 ]
 ```
 
