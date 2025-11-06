@@ -1,0 +1,42 @@
+{
+  "name": "ssh-keygen",
+  "description": "Generate SSH key pairs using Docker - equivalent to ssh-keygen command",
+  "version": "0.0.1",
+  "kind": "docker",
+  "manifest_version": 1,
+  "repository": "github.com/starthubhq/ssh-keygen",
+  "license": "MIT",
+  "inputs": [
+    {
+      "name": "ssh_keygen_config",
+      "description": "SSH key generation configuration",
+      "type": "SSHKeygenConfig",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "private_key",
+      "description": "Generated private key in OpenSSH format",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "public_key",
+      "description": "Generated public key in OpenSSH format",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "types": {
+    "SSHKeygenConfig": {
+      "t": "string",
+      "b": "number",
+      "C": "string"
+    }
+  },
+  "permissions": {
+    "fs": []
+  },
+  "mirrors": []
+}
